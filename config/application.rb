@@ -9,5 +9,6 @@ Bundler.require(*Rails.groups)
 module CityWatch
   class Application < Rails::Application
     config.active_record.raise_in_transactional_callbacks = true
+    config.autoload_paths += %W(#{config.root}/app/models/responder)
   end
 end
