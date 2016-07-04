@@ -1,6 +1,5 @@
-class Medical < ActiveRecord::Base
-  has_one :responder, as :resource 
-
+class Medical < Responder
+	
   def set_type
     self.type = 'Medical'
   end

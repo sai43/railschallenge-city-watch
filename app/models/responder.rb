@@ -1,10 +1,5 @@
 class Responder < ActiveRecord::Base
-  belongs_to :fire
-  belongs_to :police
-  belongs_to :medical
-
-
-
+ 
   TYPES = %w(Fire Police Medical)
   before_save :set_type
   validates :type, presence: true, :inclusion => { :in => TYPES }

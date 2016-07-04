@@ -1,6 +1,5 @@
-class Police < ActiveRecord::Base
-  has_one :responder, as :resource 
-
+class Police < Responder
+  
   def set_type
     self.type = 'Police'
   end
