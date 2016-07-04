@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :emergencies
   resources :responders
-  resource :fire
+  resources :fire
+  resources :police
+  resources :medical
 end

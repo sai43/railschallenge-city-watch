@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160702112520) do
+ActiveRecord::Schema.define(version: 20160702105931) do
 
   create_table "emergencies", force: :cascade do |t|
     t.string   "code"
@@ -48,7 +48,6 @@ ActiveRecord::Schema.define(version: 20160702112520) do
     t.integer  "capacity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "fire_id"
   end
 
 end
